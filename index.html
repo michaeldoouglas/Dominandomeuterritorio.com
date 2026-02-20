@@ -4,205 +4,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Casal Vivendo do Digital | Marketing & Negócios</title>
+<title>Casal Vivendo do Marketing | Negócios Digitais Premium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#050505;
-    color:#fff;
-    overflow-x:hidden;
+background:#050505;
+color:#fff;
+scroll-behavior:smooth;
 }
 
 /* NAV */
 
 nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(0,0,0,0.8);
-    backdrop-filter:blur(10px);
-    padding:20px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:1000;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(15px);
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
 nav h1{
-    color:#00ffcc;
+color:#00ffd5;
+font-weight:700;
 }
 
 nav ul{
-    display:flex;
-    gap:25px;
-    list-style:none;
+display:flex;
+gap:30px;
+list-style:none;
 }
 
 nav a{
-    text-decoration:none;
-    color:white;
-    transition:0.3s;
+color:#fff;
+text-decoration:none;
+transition:.3s;
 }
 
 nav a:hover{
-    color:#00ffcc;
+color:#00ffd5;
 }
 
 /* HERO */
 
 .hero{
-    height:100vh;
-    background:linear-gradient(120deg,#000,#050505,#001f1f);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+height:100vh;
+background:
+radial-gradient(circle at top,#001f1f,#000),
+url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7");
+background-size:cover;
+background-blend-mode:overlay;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .hero h2{
-    font-size:3rem;
-    margin-bottom:20px;
+font-size:3.5rem;
+max-width:900px;
 }
 
 .hero span{
-    color:#00ffcc;
+color:#00ffd5;
 }
 
 .hero p{
-    max-width:600px;
-    margin-bottom:30px;
-    opacity:0.9;
+max-width:700px;
+margin:30px 0;
+opacity:.9;
 }
 
 .hero button{
-    padding:15px 40px;
-    border:none;
-    background:#00ffcc;
-    color:black;
-    font-weight:600;
-    border-radius:50px;
-    cursor:pointer;
-    transition:0.3s;
+padding:18px 45px;
+border:none;
+border-radius:50px;
+background:#00ffd5;
+color:#000;
+font-weight:600;
+cursor:pointer;
+transition:.4s;
 }
 
 .hero button:hover{
-    transform:scale(1.1);
+transform:scale(1.1);
 }
 
 /* SECTIONS */
 
 section{
-    padding:100px 50px;
+padding:120px 60px;
 }
 
 .title{
-    text-align:center;
-    margin-bottom:60px;
+text-align:center;
+margin-bottom:70px;
 }
 
 .title h3{
-    font-size:2.5rem;
-    color:#00ffcc;
+font-size:2.8rem;
+color:#00ffd5;
 }
 
-/* CARDS */
+/* GRID */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
 }
 
-.card{
-    background:#0d0d0d;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,255,204,0.1);
-    transition:0.4s;
+.box{
+background:#0d0d0d;
+padding:35px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,255,213,.1);
+transition:.4s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 40px rgba(0,255,204,0.4);
+.box:hover{
+transform:translateY(-12px);
+box-shadow:0 0 40px rgba(0,255,213,.4);
 }
 
-/* ABOUT */
+/* STORY */
 
-.about{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    line-height:1.8;
-    opacity:0.9;
+.story{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+opacity:.9;
+}
+
+/* NUMBERS */
+
+.numbers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+text-align:center;
+}
+
+.number h4{
+font-size:3rem;
+color:#00ffd5;
 }
 
 /* CONTACT */
 
 .contact{
-    text-align:center;
+text-align:center;
 }
 
-.contact input,.contact textarea{
-    width:100%;
-    max-width:500px;
-    padding:15px;
-    margin:10px;
-    border:none;
-    border-radius:8px;
-}
-
-.contact button{
-    padding:15px 40px;
-    border:none;
-    background:#00ffcc;
-    border-radius:30px;
-    font-weight:600;
-    cursor:pointer;
+.contact input,
+.contact textarea{
+width:100%;
+max-width:500px;
+padding:15px;
+margin:10px;
+border:none;
+border-radius:8px;
 }
 
 /* FOOTER */
 
 footer{
-    background:black;
-    text-align:center;
-    padding:30px;
-    opacity:0.7;
-}
-
-/* ANIMATION */
-
-.fade{
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-}
-
-.show{
-    opacity:1;
-    transform:translateY(0);
+background:#000;
+padding:40px;
+text-align:center;
+opacity:.7;
 }
 
 @media(max-width:768px){
 
-    nav{
-        padding:20px;
-    }
+nav{
+padding:20px;
+}
 
-    .hero h2{
-        font-size:2.2rem;
-    }
+.hero h2{
+font-size:2.4rem;
+}
+
+section{
+padding:100px 25px;
+}
+
 }
 
 </style>
@@ -213,11 +219,14 @@ footer{
 <!-- NAV -->
 
 <nav>
-<h1>Casal Digital</h1>
+<h1>Casal Marketing</h1>
+
 <ul>
 <li><a href="#inicio">Início</a></li>
+<li><a href="#historia">História</a></li>
 <li><a href="#servicos">Serviços</a></li>
-<li><a href="#sobre">Sobre</a></li>
+<li><a href="#cases">Cases</a></li>
+<li><a href="#numeros">Resultados</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
@@ -226,14 +235,43 @@ footer{
 
 <section class="hero" id="inicio">
 
-<h2>Construindo <span>Liberdade Financeira</span><br> com Marketing Digital</h2>
+<h2 data-aos="fade-up">
+Construindo <span>Liberdade Financeira</span><br>
+com Marketing e Negócios Digitais
+</h2>
 
-<p>
-Projetos reais, tráfego pago, afiliados, negócios online
-e estrutura profissional para escala.
+<p data-aos="fade-up" data-aos-delay="300">
+Somos um casal empreendedor focado em criar,
+escalar e consolidar negócios digitais lucrativos.
 </p>
 
-<button onclick="scrollToContact()">Fale Conosco</button>
+<button onclick="goContact()" data-aos="zoom-in" data-aos-delay="600">
+Fale Conosco
+</button>
+
+</section>
+
+<!-- STORY -->
+
+<section id="historia">
+
+<div class="title" data-aos="fade-up">
+<h3>Nossa História</h3>
+</div>
+
+<div class="story" data-aos="fade-up">
+
+<p>
+Nossa jornada começou com poucos recursos,
+muitos desafios e uma decisão:
+dominar o marketing digital.
+
+Estudamos, testamos, erramos, investimos,
+construímos ativos e hoje ajudamos empresas
+a crescerem com estratégia real.
+</p>
+
+</div>
 
 </section>
 
@@ -241,28 +279,28 @@ e estrutura profissional para escala.
 
 <section id="servicos">
 
-<div class="title fade">
-<h3>Nossos Serviços</h3>
+<div class="title" data-aos="fade-up">
+<h3>O Que Fazemos</h3>
 </div>
 
-<div class="cards">
+<div class="grid">
 
-<div class="card fade">
+<div class="box" data-aos="fade-up">
 <h4>Gestão de Tráfego</h4>
-<p>Google Ads, Meta Ads e estratégias avançadas.</p>
+<p>Google Ads e Meta Ads com foco em ROI.</p>
 </div>
 
-<div class="card fade">
-<h4>Afiliados</h4>
-<p>Estrutura profissional para vendas online.</p>
+<div class="box" data-aos="fade-up">
+<h4>Estrutura Digital</h4>
+<p>Criação de funis, páginas e automações.</p>
 </div>
 
-<div class="card fade">
-<h4>Negócios Digitais</h4>
-<p>Criação e validação de projetos.</p>
+<div class="box" data-aos="fade-up">
+<h4>Branding</h4>
+<p>Posicionamento premium para marcas.</p>
 </div>
 
-<div class="card fade">
+<div class="box" data-aos="fade-up">
 <h4>Consultoria</h4>
 <p>Mentoria estratégica personalizada.</p>
 </div>
@@ -271,23 +309,64 @@ e estrutura profissional para escala.
 
 </section>
 
-<!-- ABOUT -->
+<!-- CASES -->
 
-<section id="sobre">
+<section id="cases">
 
-<div class="title fade">
-<h3>Quem Somos</h3>
+<div class="title" data-aos="fade-up">
+<h3>Cases & Projetos</h3>
 </div>
 
-<div class="about fade">
+<div class="grid">
 
-<p>
-Somos um projeto focado em crescimento financeiro,
-empreendedorismo digital e construção de ativos
-de longo prazo.
+<div class="box" data-aos="zoom-in">
+<h4>Projeto Local</h4>
+<p>+320% em faturamento em 6 meses.</p>
+</div>
 
-Trabalhamos com ética, dados reais e foco em resultado.
-</p>
+<div class="box" data-aos="zoom-in">
+<h4>E-commerce</h4>
+<p>Escala de R$15k → R$120k/mês.</p>
+</div>
+
+<div class="box" data-aos="zoom-in">
+<h4>Infoproduto</h4>
+<p>ROI 5.4x com tráfego pago.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- NUMBERS -->
+
+<section id="numeros">
+
+<div class="title" data-aos="fade-up">
+<h3>Nossos Números</h3>
+</div>
+
+<div class="numbers">
+
+<div class="number" data-aos="fade-up">
+<h4>+500k</h4>
+<p>Gerenciados</p>
+</div>
+
+<div class="number" data-aos="fade-up">
+<h4>+200</h4>
+<p>Projetos</p>
+</div>
+
+<div class="number" data-aos="fade-up">
+<h4>+6</h4>
+<p>Anos</p>
+</div>
+
+<div class="number" data-aos="fade-up">
+<h4>+98%</h4>
+<p>Satisfação</p>
+</div>
 
 </div>
 
@@ -297,19 +376,19 @@ Trabalhamos com ética, dados reais e foco em resultado.
 
 <section id="contato">
 
-<div class="title fade">
+<div class="title" data-aos="fade-up">
 <h3>Contato</h3>
 </div>
 
-<div class="contact fade">
+<div class="contact" data-aos="fade-up">
 
-<input type="text" placeholder="Seu nome">
-<input type="email" placeholder="Seu email">
-<textarea rows="5" placeholder="Sua mensagem"></textarea>
+<input type="text" placeholder="Nome">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Mensagem"></textarea>
 
-<br>
+<br><br>
 
-<button>Enviar Mensagem</button>
+<button>Enviar</button>
 
 </div>
 
@@ -319,31 +398,20 @@ Trabalhamos com ética, dados reais e foco em resultado.
 
 <footer>
 
-<p>© 2026 Casal Vivendo do Digital • Todos os direitos reservados</p>
+<p>© 2026 Casal Vivendo do Marketing • Todos os direitos reservados</p>
 
 </footer>
 
 <script>
 
-// Scroll button
-function scrollToContact(){
-    document.getElementById("contato").scrollIntoView({behavior:"smooth"});
+AOS.init({
+duration:1200,
+once:true
+});
+
+function goContact(){
+document.getElementById("contato").scrollIntoView({behavior:"smooth"});
 }
-
-// Fade Animation
-const faders = document.querySelectorAll('.fade');
-
-const appear = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }
-    });
-});
-
-faders.forEach(fade=>{
-    appear.observe(fade);
-});
 
 </script>
 
