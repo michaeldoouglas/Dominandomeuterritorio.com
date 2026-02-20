@@ -4,209 +4,188 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Casal Vivendo do Marketing | Negócios Digitais Premium</title>
+<title>Casal Vivendo do Digital | Marketing & Tráfego</title>
+
+<meta name="description" content="Casal Vivendo do Digital é um projeto focado em marketing digital, afiliados, tráfego pago e geração de renda online.">
+<meta name="robots" content="index, follow">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#050505;
-color:#fff;
-scroll-behavior:smooth;
+    background:#050505;
+    color:#fff;
 }
 
 /* NAV */
 
 nav{
-position:fixed;
-width:100%;
-top:0;
-background:rgba(0,0,0,0.85);
-backdrop-filter:blur(15px);
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
 }
 
 nav h1{
-color:#00ffd5;
-font-weight:700;
+    color:#00f7ff;
+    font-weight:700;
 }
 
 nav ul{
-display:flex;
-gap:30px;
-list-style:none;
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 nav a{
-color:#fff;
-text-decoration:none;
-transition:.3s;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
 }
 
 nav a:hover{
-color:#00ffd5;
+    color:#00f7ff;
 }
 
 /* HERO */
 
 .hero{
-height:100vh;
-background:
-radial-gradient(circle at top,#001f1f,#000),
-url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7");
-background-size:cover;
-background-blend-mode:overlay;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    min-height:100vh;
+    background:linear-gradient(135deg,#000,#0a0a0a,#020202);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 20px;
+}
+
+.hero-box{
+    max-width:900px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    padding:60px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,247,255,0.15);
 }
 
 .hero h2{
-font-size:3.5rem;
-max-width:900px;
+    font-size:38px;
+    margin-bottom:20px;
 }
 
 .hero span{
-color:#00ffd5;
+    color:#00f7ff;
 }
 
 .hero p{
-max-width:700px;
-margin:30px 0;
-opacity:.9;
+    font-size:17px;
+    color:#ccc;
+    line-height:1.6;
 }
 
 .hero button{
-padding:18px 45px;
-border:none;
-border-radius:50px;
-background:#00ffd5;
-color:#000;
-font-weight:600;
-cursor:pointer;
-transition:.4s;
+    margin-top:30px;
+    padding:15px 40px;
+    background:#00f7ff;
+    border:none;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .hero button:hover{
-transform:scale(1.1);
+    background:#00c4cc;
 }
 
 /* SECTIONS */
 
 section{
-padding:120px 60px;
+    padding:100px 40px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.title{
-text-align:center;
-margin-bottom:70px;
+section h3{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#00f7ff;
 }
 
-.title h3{
-font-size:2.8rem;
-color:#00ffd5;
+section p{
+    color:#ccc;
+    line-height:1.7;
+    font-size:16px;
 }
 
-/* GRID */
+/* CARDS */
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:35px;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
 }
 
-.box{
-background:#0d0d0d;
-padding:35px;
-border-radius:20px;
-box-shadow:0 0 25px rgba(0,255,213,.1);
-transition:.4s;
+.card{
+    background:#0d0d0d;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,247,255,0.05);
+    transition:0.3s;
 }
 
-.box:hover{
-transform:translateY(-12px);
-box-shadow:0 0 40px rgba(0,255,213,.4);
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px rgba(0,247,255,0.2);
 }
 
-/* STORY */
-
-.story{
-max-width:900px;
-margin:auto;
-text-align:center;
-line-height:1.9;
-opacity:.9;
-}
-
-/* NUMBERS */
-
-.numbers{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-text-align:center;
-}
-
-.number h4{
-font-size:3rem;
-color:#00ffd5;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact input,
-.contact textarea{
-width:100%;
-max-width:500px;
-padding:15px;
-margin:10px;
-border:none;
-border-radius:8px;
+.card h4{
+    margin-bottom:10px;
+    color:#00f7ff;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
-padding:40px;
-text-align:center;
-opacity:.7;
+    background:#000;
+    text-align:center;
+    padding:40px;
+    color:#777;
+    font-size:14px;
 }
 
 @media(max-width:768px){
 
-nav{
-padding:20px;
-}
-
 .hero h2{
-font-size:2.4rem;
+    font-size:28px;
 }
 
-section{
-padding:100px 25px;
+.hero-box{
+    padding:40px 25px;
+}
+
+nav{
+    padding:15px 20px;
+}
+
+nav ul{
+    display:none;
 }
 
 }
@@ -216,204 +195,107 @@ padding:100px 25px;
 
 <body>
 
-<!-- NAV -->
-
 <nav>
-<h1>Casal Marketing</h1>
-
-<ul>
-<li><a href="#inicio">Início</a></li>
-<li><a href="#historia">História</a></li>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#cases">Cases</a></li>
-<li><a href="#numeros">Resultados</a></li>
-<li><a href="#contato">Contato</a></li>
-</ul>
+    <h1>Casal Digital</h1>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projeto">Projeto</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
 </nav>
 
-<!-- HERO -->
+<section class="hero">
 
-<section class="hero" id="inicio">
+    <div class="hero-box">
 
-<h2 data-aos="fade-up">
-Construindo <span>Liberdade Financeira</span><br>
-com Marketing e Negócios Digitais
-</h2>
+        <h2>Construindo Liberdade com <span>Marketing Digital</span></h2>
 
-<p data-aos="fade-up" data-aos-delay="300">
-Somos um casal empreendedor focado em criar,
-escalar e consolidar negócios digitais lucrativos.
-</p>
+        <p>
+        Projeto focado em tráfego pago, afiliados, estruturação digital
+        e desenvolvimento de negócios online sustentáveis.
+        </p>
 
-<button onclick="goContact()" data-aos="zoom-in" data-aos-delay="600">
-Fale Conosco
-</button>
+        <button onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">
+            Conheça o Projeto
+        </button>
+
+    </div>
 
 </section>
 
-<!-- STORY -->
+<section id="sobre">
 
-<section id="historia">
-
-<div class="title" data-aos="fade-up">
-<h3>Nossa História</h3>
-</div>
-
-<div class="story" data-aos="fade-up">
+<h3>Sobre Nós</h3>
 
 <p>
-Nossa jornada começou com poucos recursos,
-muitos desafios e uma decisão:
-dominar o marketing digital.
-
-Estudamos, testamos, erramos, investimos,
-construímos ativos e hoje ajudamos empresas
-a crescerem com estratégia real.
+Somos um casal empreendedor focado em marketing digital, tráfego pago,
+afiliados e geração de renda online. Nossa jornada é construída com estudo,
+testes, ética e crescimento sustentável.
 </p>
 
-</div>
-
 </section>
-
-<!-- SERVICES -->
 
 <section id="servicos">
 
-<div class="title" data-aos="fade-up">
 <h3>O Que Fazemos</h3>
+
+<div class="cards">
+
+<div class="card">
+<h4>Tráfego Pago</h4>
+<p>Gestão estratégica de campanhas focadas em performance.</p>
 </div>
 
-<div class="grid">
-
-<div class="box" data-aos="fade-up">
-<h4>Gestão de Tráfego</h4>
-<p>Google Ads e Meta Ads com foco em ROI.</p>
+<div class="card">
+<h4>Afiliados</h4>
+<p>Estruturação de funis e ofertas digitais.</p>
 </div>
 
-<div class="box" data-aos="fade-up">
-<h4>Estrutura Digital</h4>
-<p>Criação de funis, páginas e automações.</p>
-</div>
-
-<div class="box" data-aos="fade-up">
-<h4>Branding</h4>
-<p>Posicionamento premium para marcas.</p>
-</div>
-
-<div class="box" data-aos="fade-up">
+<div class="card">
 <h4>Consultoria</h4>
-<p>Mentoria estratégica personalizada.</p>
+<p>Organização digital para negócios online.</p>
+</div>
+
+<div class="card">
+<h4>Projetos Próprios</h4>
+<p>Desenvolvimento de marcas digitais.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- CASES -->
+<section id="projeto">
 
-<section id="cases">
+<h3>Nosso Projeto</h3>
 
-<div class="title" data-aos="fade-up">
-<h3>Cases & Projetos</h3>
-</div>
-
-<div class="grid">
-
-<div class="box" data-aos="zoom-in">
-<h4>Projeto Local</h4>
-<p>+320% em faturamento em 6 meses.</p>
-</div>
-
-<div class="box" data-aos="zoom-in">
-<h4>E-commerce</h4>
-<p>Escala de R$15k → R$120k/mês.</p>
-</div>
-
-<div class="box" data-aos="zoom-in">
-<h4>Infoproduto</h4>
-<p>ROI 5.4x com tráfego pago.</p>
-</div>
-
-</div>
+<p>
+Casal Vivendo do Digital é um projeto em constante evolução, focado em
+transparência, crescimento e resultados reais.
+</p>
 
 </section>
-
-<!-- NUMBERS -->
-
-<section id="numeros">
-
-<div class="title" data-aos="fade-up">
-<h3>Nossos Números</h3>
-</div>
-
-<div class="numbers">
-
-<div class="number" data-aos="fade-up">
-<h4>+500k</h4>
-<p>Gerenciados</p>
-</div>
-
-<div class="number" data-aos="fade-up">
-<h4>+200</h4>
-<p>Projetos</p>
-</div>
-
-<div class="number" data-aos="fade-up">
-<h4>+6</h4>
-<p>Anos</p>
-</div>
-
-<div class="number" data-aos="fade-up">
-<h4>+98%</h4>
-<p>Satisfação</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
 
 <section id="contato">
 
-<div class="title" data-aos="fade-up">
 <h3>Contato</h3>
-</div>
 
-<div class="contact" data-aos="fade-up">
-
-<input type="text" placeholder="Nome">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Mensagem"></textarea>
-
-<br><br>
-
-<button>Enviar</button>
-
-</div>
+<p>
+Email: contato@casalvivendododigital.com.br <br>
+Instagram: @casalvivendododigital
+</p>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
-<p>© 2026 Casal Vivendo do Marketing • Todos os direitos reservados</p>
+<p>
+© 2026 - Casal Vivendo do Digital <br>
+Todos os direitos reservados.
+</p>
 
 </footer>
-
-<script>
-
-AOS.init({
-duration:1200,
-once:true
-});
-
-function goContact(){
-document.getElementById("contato").scrollIntoView({behavior:"smooth"});
-}
-
-</script>
 
 </body>
 </html>
