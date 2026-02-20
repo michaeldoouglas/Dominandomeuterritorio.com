@@ -4,76 +4,348 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Casal Vivendo do Digital | Marketing e Afiliados</title>
+<title>Casal Vivendo do Digital | Marketing & Negócios</title>
 
-<meta name="description" content="Projeto Casal Vivendo do Digital focado em marketing digital, afiliados e geração de renda online.">
-<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  margin: 0;
-  padding: 0;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  background: #ffffff;
-  padding: 40px;
-  margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+body{
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-h1 {
-  color: #111;
+/* NAV */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
 }
 
-h2 {
-  color: #333;
+nav h1{
+    color:#00ffcc;
 }
 
-p {
-  line-height: 1.6;
-  color: #444;
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
 }
 
-.footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #777;
-  text-align: center;
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
 }
+
+nav a:hover{
+    color:#00ffcc;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(120deg,#000,#050505,#001f1f);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#00ffcc;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+.hero button{
+    padding:15px 40px;
+    border:none;
+    background:#00ffcc;
+    color:black;
+    font-weight:600;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 50px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h3{
+    font-size:2.5rem;
+    color:#00ffcc;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#0d0d0d;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,255,204,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(0,255,204,0.4);
+}
+
+/* ABOUT */
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    opacity:0.9;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact input,.contact textarea{
+    width:100%;
+    max-width:500px;
+    padding:15px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+}
+
+.contact button{
+    padding:15px 40px;
+    border:none;
+    background:#00ffcc;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    opacity:0.7;
+}
+
+/* ANIMATION */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    .hero h2{
+        font-size:2.2rem;
+    }
+}
+
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
+<!-- NAV -->
 
-<h1>Casal Vivendo do Digital</h1>
-<h2>Marketing Digital e Afiliados</h2>
+<nav>
+<h1>Casal Digital</h1>
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
 
-<p>Projeto focado em geração de renda online através de marketing digital, afiliados e tráfego pago.</p>
+<!-- HERO -->
 
-<p>Atuação com campanhas em plataformas como Google Ads e redes sociais.</p>
+<section class="hero" id="inicio">
 
-<p>Trabalho baseado em ética, transparência e respeito às políticas das plataformas.</p>
+<h2>Construindo <span>Liberdade Financeira</span><br> com Marketing Digital</h2>
 
+<p>
+Projetos reais, tráfego pago, afiliados, negócios online
+e estrutura profissional para escala.
+</p>
+
+<button onclick="scrollToContact()">Fale Conosco</button>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="servicos">
+
+<div class="title fade">
+<h3>Nossos Serviços</h3>
+</div>
+
+<div class="cards">
+
+<div class="card fade">
+<h4>Gestão de Tráfego</h4>
+<p>Google Ads, Meta Ads e estratégias avançadas.</p>
+</div>
+
+<div class="card fade">
+<h4>Afiliados</h4>
+<p>Estrutura profissional para vendas online.</p>
+</div>
+
+<div class="card fade">
+<h4>Negócios Digitais</h4>
+<p>Criação e validação de projetos.</p>
+</div>
+
+<div class="card fade">
+<h4>Consultoria</h4>
+<p>Mentoria estratégica personalizada.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="sobre">
+
+<div class="title fade">
+<h3>Quem Somos</h3>
+</div>
+
+<div class="about fade">
+
+<p>
+Somos um projeto focado em crescimento financeiro,
+empreendedorismo digital e construção de ativos
+de longo prazo.
+
+Trabalhamos com ética, dados reais e foco em resultado.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contato">
+
+<div class="title fade">
 <h3>Contato</h3>
-
-<p>Email: contato@casalvivendododigital.com.br</p>
-
-<p>Atendimento online.</p>
-
-<div class="footer">
-© 2026 - Casal Vivendo do Digital
 </div>
 
+<div class="contact fade">
+
+<input type="text" placeholder="Seu nome">
+<input type="email" placeholder="Seu email">
+<textarea rows="5" placeholder="Sua mensagem"></textarea>
+
+<br>
+
+<button>Enviar Mensagem</button>
+
 </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Casal Vivendo do Digital • Todos os direitos reservados</p>
+
+</footer>
+
+<script>
+
+// Scroll button
+function scrollToContact(){
+    document.getElementById("contato").scrollIntoView({behavior:"smooth"});
+}
+
+// Fade Animation
+const faders = document.querySelectorAll('.fade');
+
+const appear = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+faders.forEach(fade=>{
+    appear.observe(fade);
+});
+
+</script>
 
 </body>
 </html>
